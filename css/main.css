@@ -53,7 +53,7 @@ a.btn_next{right: 30px;background-position: -30px 0;}
 .newsroom_content_company:after, .newsroom_content_product:after {content: ''; display: block; width: 2px; height: 15px; background: #ccc; position: absolute; top: 6px; right: 0;}
 .newsroom_content_date{font-size: 16px; color: #999;}
 
-.newsroom_content_title{overflow: hidden; max-height: 62px; font-size: 23px; font-weight: 600; text-overflow: ellipsis; word-break: break-word; line-height: 1.3; color: #000; margin-top: 10px;}
+.newsroom_content_title{overflow: hidden; max-height: 62px; font-size: 23px; font-weight: 600; text-overflow: ellipsis;line-height: 1.3; color: #000; margin-top: 10px;}
 
 .newsroom_newsletter{width: 1200px; margin: 0 auto; background: #f4f7fb url(/images/bg_newsletter.jpg) no-repeat left 35px top 40px; height: 180px; overflow: hidden; padding: 50px 0 0 230px; padding-top: 50px; padding-right: 0px; padding-bottom: 0px; padding-left: 230px; box-sizing: border-box;}
 .newsroom_newsletter_title{font-size: 28px; font-weight: 600; color: #000; letter-spacing: -0.04em;}
