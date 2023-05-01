@@ -55,18 +55,18 @@ a.btn_next{right: 30px;background-position: -30px 0;}
 
 .newsroom_content_title{overflow: hidden; max-height: 62px; font-size: 23px; font-weight: 600; text-overflow: ellipsis;line-height: 1.3; color: #000; margin-top: 10px;}
 
-.newsroom_newsletter{width: 1200px; margin: 0 auto; background: #f4f7fb url(/images/bg_newsletter.jpg) no-repeat left 35px top 40px; height: 180px; overflow: hidden; padding: 50px 0 0 230px; padding-top: 50px; padding-right: 0px; padding-bottom: 0px; padding-left: 230px; box-sizing: border-box;}
+.newsroom_newsletter{width: 1200px; margin: 0 auto; background: #f4f7fb url(../images/bg_newsletter.jpg) no-repeat left 35px top 40px; height: 180px; overflow: hidden; padding: 50px 0 0 230px; padding-top: 50px; padding-right: 0px; padding-bottom: 0px; padding-left: 230px; box-sizing: border-box;}
 .newsroom_newsletter_title{font-size: 28px; font-weight: 600; color: #000; letter-spacing: -0.04em;}
 .newsroom_newsletter_content{font-size: 18px; color: #666; letter-spacing: -0.04em; display: inline-block; vertical-align: middle;}
 .newsroom_newsletter_buttons{display: inline-block; vertical-align: middle; margin-left: 110px; line-height: 45px;}
 .newsroom_newsletter_buttons a{position: relative; width: 160px;height: 45px; font-size: 16px; background-color: #fff;margin-right: 10px;color: #666;padding: 15px 30px;}
-.newsroom_newsletter_buttons a:after{content:''; display: inline-block;vertical-align: middle; width: 5px; height: 9px; margin-top: -4px; margin-left: 8px; background-image: url(/images/btn_arrow_ico_g.png); background-position: 0 50%; background-repeat: no-repeat;
+.newsroom_newsletter_buttons a:after{content:''; display: inline-block;vertical-align: middle; width: 5px; height: 9px; margin-top: -4px; margin-left: 8px; background-image: url(../images/btn_arrow_ico_g.png); background-position: 0 50%; background-repeat: no-repeat;
 
 }
 /* content2 */
-.content2{background: url(/images/bg_prhall.jpg);background-size: cover; height: 290px; position: relative;}
+.content2{background: url(../images/bg_prhall.jpg);background-size: cover; height: 290px; position: relative;}
 
-.content2_bg{text-indent: -9999px; position: absolute; z-index: 1; top: 0; right: 0; width: 45%; height: 100%; background: url(/images/img_prhall.png) no-repeat center;}
+.content2_bg{text-indent: -9999px; position: absolute; z-index: 1; top: 0; right: 0; width: 45%; height: 100%; background: url(../images/img_prhall.png) no-repeat center;}
 .content2 a{ display: block;  width: 100%; height: 100%;  box-sizing: border-box; }
 .content2_container{ max-width: 1200px; width: 100%; margin: 0 auto; position: relative; }
 .content2_container span{display: block; font-size: 22px; color: rgba(255,255,255,.7); text-align: left; font-weight: 400;line-height: 1.5; letter-spacing: 0.1em;}
@@ -89,17 +89,17 @@ a.btn_next{right: 30px;background-position: -30px 0;}
   box-sizing: border-box;
   background-color: #fff;}
 .shortcuts .shortcut_title{font-size: 21px; color: #000; font-weight: 600;padding-bottom: 5px;}
-.shortcuts .shortcut_content{font-size: 18px; color: #666;background: url(/images/ico_outlink.png) no-repeat 90% 50%;}
+.shortcuts .shortcut_content{font-size: 18px; color: #666;background: url(../images/ico_outlink.png) no-repeat 90% 50%;}
 
 .content3_products>div{display:flex; align-items: center; width: 100%;}
 .content3_products>div>div{flex:1}
 .content3_products h3{font-size: 28px;font-weight: 600;}
 .content3_products p{font-size: 18px; color: #666; line-height: 1.55;;}
 
-.content3_products a{display:block; width: 100px; padding: 15px 30px;line-height: 1.5; margin-top: 30px;font-size: 16px; font-weight: 400; background: url(/images/ico_prd_arr.png) no-repeat 80%; background-color: #fff; transition: all 0.5s ease}
+.content3_products a{display:block; width: 100px; padding: 15px 30px;line-height: 1.5; margin-top: 30px;font-size: 16px; font-weight: 400; background: url(../images/ico_prd_arr.png) no-repeat 80%; background-color: #fff; transition: all 0.5s ease}
 .content3_product_imagearea>img{width: 600px;height: 350px; transition: all 0.5s ease;}
 .content3_products>div:hover>.content3_product_imagearea>img{transform: scale(1.1); }
-.content3_products>div:hover a{color: #fff; background: url(/images/ico_prd_arr_on.png) no-repeat 80% ; background-color: #1428a0;}
+.content3_products>div:hover a{color: #fff; background: url(../images/ico_prd_arr_on.png) no-repeat 80% ; background-color: #1428a0;}
 
 .content3_products .content3_text{padding-left: 60px;}
 
@@ -115,9 +115,9 @@ a.btn_next{right: 30px;background-position: -30px 0;}
 .content3_product3>.content3_product_imagearea{order:1; overflow: hidden;}
 .content3_product3>.content3_product3_content{order:2}
 
-.content3_product1_content_icon{text-indent: -9999px;overflow: hidden; background: url(/images/ico_prd01.png) no-repeat 0 50%; text-align: left; height: 80px;}
-.content3_product2_content_icon{text-indent: -9999px;overflow: hidden; background: url(/images/ico_prd02.png) no-repeat 0 50%; text-align: left; height: 80px;}
-.content3_product3_content_icon{text-indent: -9999px;overflow: hidden; background: url(/images/ico_prd03.png) no-repeat 0 50%; text-align: left; height: 80px;}
+.content3_product1_content_icon{text-indent: -9999px;overflow: hidden; background: url(../images/ico_prd01.png) no-repeat 0 50%; text-align: left; height: 80px;}
+.content3_product2_content_icon{text-indent: -9999px;overflow: hidden; background: url(../images/ico_prd02.png) no-repeat 0 50%; text-align: left; height: 80px;}
+.content3_product3_content_icon{text-indent: -9999px;overflow: hidden; background: url(../images/ico_prd03.png) no-repeat 0 50%; text-align: left; height: 80px;}
 
 
 /* content4 */
@@ -126,10 +126,10 @@ a.btn_next{right: 30px;background-position: -30px 0;}
 .content4_container{display:flex;}
 .content4_container>a{flex:1; height: 860px;position: relative;height: 860px;overflow: hidden;}
 
-.content4_company_bgarea{position: relative; height: 860px;background: url(/images/img_company01.jpg); transition: all 0.3s ease}
+.content4_company_bgarea{position: relative; height: 860px;background: url(../images/img_company01.jpg); transition: all 0.3s ease}
 .content4_company_bgarea:after{position: absolute; content:''; width: 100%;height: 100%; background: #000; opacity: 0; transition: all 0.5s}
 
-.content4_esg_bgarea{position: relative; height: 860px;background: url(/images/img_company02.jpg); transition: all 0.3s ease}
+.content4_esg_bgarea{position: relative; height: 860px;background: url(../images/img_company02.jpg); transition: all 0.3s ease}
 .content4_esg_bgarea:after{position: absolute; content:''; width: 100%;height: 100%; background: #000; opacity:0; transition: all 0.5s}
 
 .content4_company:hover>.content4_company_bgarea{transform: scale(1.1)}
