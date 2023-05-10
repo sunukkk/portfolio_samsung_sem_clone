@@ -9,8 +9,6 @@ window.addEventListener('load', () =>{
 const gnbMenu = document.querySelectorAll('.gnb>ul>li');
 const headerWrap = document.querySelector('.header_wrap')
 
-
-
 for(let i = 0; i<gnbMenu.length; i++){
   gnbMenu[i].addEventListener('mouseover', e =>{
     e.currentTarget.classList.add('on')
@@ -37,8 +35,6 @@ for(let i = 0; i<gnbMenu.length; i++){
 }
 
 
-
-
 /* 검색박스 */
 // 검색버튼 누르면 검색박스 보이고
 // 닫기버튼 누르면 검색박스 안보이게
@@ -57,125 +53,6 @@ btnSrchClose.addEventListener('click', e =>{
   srchWrap.classList.remove('on')
 });
 
-
-// /* 오토배너 */
-
-// //next 버튼 클릭했을때
-// //li.slide_roll 
-// //.slide_roll>ul>li.on>a
-
-// const btnNext = document.querySelector('.btn_next')
-// const btnPrev = document.querySelector('.btn_prev')
-// const slide = document.querySelectorAll('.slide')
-// const slideRoll = document.querySelectorAll('.slide_roll li')
-// const btnPlay = document.querySelector('.btn_play')
-
-
-
-
-// let bnnNum = 0;
-// let lastNum = document.querySelectorAll('.slide_wrap>li').length -1;
-
-
-// function activation(index,list){
-//   for(let i=0; i<list.length;i++){
-//     list[i].classList.remove('on','active');
-//   }
-//   list[index].classList.add('on','active')
-// }
-
-// btnNext.addEventListener('click', e =>{
-//   e.preventDefault();
-//   bnnNum++;
-//   if(bnnNum>lastNum)bnnNum=0;
-//   // for(let j = 0;j<slide.length;j++){
-//   //   slide[j].classList.remove('active')
-//   //   slideRoll[j].classList.remove('on')
-//   // }
-//   // slide[bnnNum].classList.add('active')
-//   // slideRoll[bnnNum].classList.add('on')
-//   activation(bnnNum, slide)
-//   activation(bnnNum, slideRoll)
-// })
-  
-
-
-// //prev버튼 클릭했을때
-
-// btnPrev.addEventListener('click', e=>{
-//   e.preventDefault();
-//   bnnNum--;
-//   if(bnnNum<0)bnnNum=lastNum;
-
-//   activation(bnnNum, slide)
-//   activation(bnnNum, slideRoll)
-
-// })
-// //오토배너 5초마다
-
-// function autoBanner(){
-//   bnnNum++;
-//   if(bnnNum>lastNum) bnnNum=0;
-//   activation(bnnNum,slide);
-//   activation(bnnNum,slideRoll);
-//   autoBnn = setTimeout(autoBanner,5000);
-// }
-
-// let autoBnn = setTimeout(autoBanner,5000)
-
-
-// /* let autoBnn = setInterval(() =>{
-//   bnnNum++;
-//   if(bnnNum>lastNum) bnnNum=0;
-//   activation(bnnNum,slide);
-//   activation(bnnNum,slideRoll);
-// }
-// ,5000) */
-
-
-// // 배너 재생 멈춤 버튼
-// // 배너 멈추고 이미지 바뀌고
-// // 배너 재생 이미지 바뀌고
-
-
-// // 롤링버튼클릭
-// // 해당배너로 이동
-
-
-
-// // const btnNext = document.querySelector('.btn_next')
-// // const btnPrev = document.querySelector('.btn_prev')
-// // const slide = document.querySelectorAll('.slide')
-// // const slideRoll = document.querySelectorAll('.slide_roll ul li')
-
-
-// let flag = true;
-
-
-
-// btnPlay.addEventListener('click', e =>{
-//   e.preventDefault();
-//   if(flag==true){
-//     btnPlay.classList.add('on');
-//     clearTimeout(autoBnn); 
-//     flag = false;
-
-//   }else{
-//     btnPlay.classList.remove('on')
-//     autoBnn = setTimeout(autoBanner, 5000)
-//     flag = true;
-//   }
-//   })
-  
-  
-// for(let i=0; i<slideRoll.length;i++){
-//   slideRoll[i].addEventListener('click', e =>{
-//     e.preventDefault();
-//     activation(i, slide);
-//     activation(i, slideRoll);
-    
-//   })
-// }
 
 // top 버튼
 // 클릭하면 스크롤 맨위로 올라감
@@ -206,6 +83,52 @@ window.addEventListener('scroll', () =>{
   }
 
 })
+
+// 스크롤 위치에 따라 내용이 나타나는 효과
+
+const content1 = document.querySelector('.content1')
+const content2 = document.querySelector('.content2')
+const content3 = document.querySelector('.content3')
+const content4 = document.querySelector('.content4')
+const sitemap = document.querySelector('.sitemap')
+const footer = document.querySelector('#footer')
+
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset;
+  console.log(scrollTop);
+
+  let windowHeight = window.innerHeight;
+  let scrollHeight = document.documentElement.scrollHeight - windowHeight;
+
+  let scrollPercentage = (scrollTop / scrollHeight) * 100;
+
+  if (scrollPercentage >= 10) {
+    content1.classList.add('on');
+  }
+
+  if (scrollPercentage >= 20) {
+    content2.classList.add('on');
+  }
+
+  if (scrollPercentage >= 40) {
+    content3.classList.add('on');
+  }
+
+  if (scrollPercentage >= 60) {
+    content4.classList.add('on');
+  }
+
+  if (scrollPercentage >= 80) {
+    sitemap.classList.add('on');
+  }
+
+  if (scrollPercentage >= 90) {
+    footer.classList.add('on');
+  }
+});
+
+
 
 // sub1.html
 // step1
