@@ -85,6 +85,71 @@ window.addEventListener('scroll', () =>{
 
 })
 
+//동영상 슬라이드
+const nextBtn = document.querySelector(".btn_next");
+const prevBtn = document.querySelector(".btn_prev");
+const slides = document.querySelectorAll(".slide_wrap>li");
+const slideRolls = document.querySelectorAll(".slide_roll>ul>li");
+const slideLength = slides.length-1;
+let slideIndex = 0;
+
+nextBtn.addEventListener("click", e => {
+  e.preventDefault();
+  slideIndex++;
+  if(slideIndex>slideLength) slideIndex = 0;
+  banner(slideIndex);
+});
+
+prevBtn.addEventListener("click", e => {
+  e.preventDefault();
+  slideIndex--;
+  if(slideIndex<0) slideIndex = slideLength;
+  banner(slideIndex);
+});
+
+function banner(i) {
+  slides.forEach((li,index) => {
+    li.classList.remove("active","on");
+    slideRolls[index].classList.remove("on");
+  });
+  slides[i].classList.add("active","on");
+  slideRolls[i].classList.add("on");
+}
+
+function autoBanner() {
+  slideIndex++;
+  if(slideIndex>slideLength) slideIndex = 0;
+  banner(slideIndex);
+  autoBnn = setTimeout(autoBanner,5000); //재귀함수
+}
+
+let autoBnn = setTimeout(autoBanner,5000);//최초호출
+const btnPlay = document.querySelector(".btn_play");
+let flag = 0;
+
+btnPlay.addEventListener("click", e => {
+  e.preventDefault();
+  e.currentTarget.classList.toggle("on");
+  if(flag == 0) {
+    clearTimeout(autoBnn);
+    flag = 1;
+  }
+  else {
+    autoBnn = setTimeout(autoBanner,5000);
+    flag = 0;
+  }
+});
+
+// 롤링버튼클릭
+// 해당 배너로 이동
+slideRolls.forEach((li,index) => {
+  li.addEventListener("click", e => {
+    e.preventDefault();
+    banner(index);
+  });
+});
+
+
 // 스크롤 위치에 따라 내용이 나타나는 효과
 
 const content1 = document.querySelector('.content1')
@@ -129,24 +194,5 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
-
-// sub1.html
-// step1
-
-const btnInq = document.querySelectorAll('.step1 ul li>a')
-
-for(let i=0;i<btnInq.length;i++){
-  btnInq[i].addEventListener('click', e =>{
-    e.preventDefault();
-    for(let i=0;i<btnInq.length;i++){
-      btnInq[i].style.background = `#fff url(images/ico_inquiry_0${i+1}.png) no-repeat 50% 35%`
-      btnInq[i].style.color = `#333`
-    }
-    btnInq[i].style.background = `#043285 url(images/ico_inquiry_on_0${i+1}.png) no-repeat 50% 35%`
-    btnInq[i].style.color = `#fff`
-    console.log(btnInq[i])
-  })
-}
 
 })
