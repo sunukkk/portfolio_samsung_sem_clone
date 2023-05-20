@@ -13,6 +13,7 @@ for(let i = 0; i<gnbMenu.length; i++){
   gnbMenu[i].addEventListener('mouseover', e =>{
     e.currentTarget.classList.add('on')
     let ht = e.currentTarget.children[1].offsetHeight;
+    console.log(e.currentTarget.children[1])
     headerWrap.style.height = `${70+ht}px`
     
   })
