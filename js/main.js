@@ -93,7 +93,7 @@ const content3 = document.querySelector('.content3')
 const content4 = document.querySelector('.content4')
 const sitemap = document.querySelector('.sitemap')
 const footer = document.querySelector('#footer')
-
+console.log(footer)
 
 window.addEventListener('scroll', () => {
   let scrollTop = window.pageYOffset;
@@ -135,7 +135,6 @@ window.addEventListener('scroll', () => {
 // step1
 
 const btnInq = document.querySelectorAll('.step1 ul li>a')
-console.log(btnInq)
 
 for(let i=0;i<btnInq.length;i++){
   btnInq[i].addEventListener('click', e =>{
